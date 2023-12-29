@@ -1,0 +1,32 @@
+server:
+  port: 9090
+
+
+
+
+  #db configuration
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  profiles:
+    active: dev
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  security:
+    user:
+      name: rakesh
+      password: rakesh
+      roles: ADMIN
+
+logging:
+  level:
+    org:
+      springframework:
+        security: Debug
